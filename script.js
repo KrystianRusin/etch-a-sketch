@@ -1,5 +1,13 @@
 window.onload = function() {
-    createDiv();   
+    createDiv();
+    draw();
+}
+
+const draw = () => {
+    const cells = document.querySelectorAll('.gridsquare')
+    cells.forEach(cell => cell.addEventListener('mouseover', () => {
+        cell.style.backgroundColor = 'grey'
+    }))
 }
 
 const createDiv = () => {

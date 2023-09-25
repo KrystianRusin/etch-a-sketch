@@ -23,6 +23,7 @@
 }
 
 .gridsquare {
+    background: white;
     border: 1px solid rgb(218, 216, 216);
     width: 30px;
     height: 30px;
