@@ -1,3 +1,5 @@
+let color = 'rgb(165, 165, 165)'
+
 window.onload = function() {
     createDiv();
     draw();
@@ -6,7 +8,7 @@ window.onload = function() {
 const draw = () => {
     const cells = document.querySelectorAll('.gridsquare')
     cells.forEach(cell => cell.addEventListener('mouseover', () => {
-        cell.style.backgroundColor = 'grey'
+        cell.style.backgroundColor = color
     }))
 }
 
@@ -30,3 +32,7 @@ clear.addEventListener('click', () => {
     cells.forEach(cell => cell.style.backgroundColor = 'white')
 });
 
+const colorSelect = document.getElementById("color-select");
+colorSelect.addEventListener('change', () => {
+    color = colorSelect.value
+})
