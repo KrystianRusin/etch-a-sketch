@@ -12,6 +12,11 @@
 .container {
     display: flex;
     justify-content: center;
+    gap: 32px;
+}
+
+.user-options {
+    list-style: none;
 }
 
 .draw-container {

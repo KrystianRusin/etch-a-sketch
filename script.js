@@ -23,3 +23,10 @@ const createDiv = () => {
         container.appendChild(row)
     }
 }
+
+const clear = document.getElementById("clear-btn")
+clear.addEventListener('click', () => {
+    const cells = document.querySelectorAll('.gridsquare');
+    cells.forEach(cell => cell.style.backgroundColor = 'white')
+});
+

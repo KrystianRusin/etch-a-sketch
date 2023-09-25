@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Etch-A-Sketch</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1 id="title" style="font-family: Titan One;">Etch-A-Sketch</h1>
-
     <div class="container">
-        <div class="draw-container" id="draw-container">
-        </div>
+        <ul class="user-options">
+            <li>
+                <button id = "clear-btn">Clear</button>
+            </li>
+        </ul>
+        <div class="draw-container" id="draw-container"></div>
     </div>
     
     <script src="script.js"></script>
